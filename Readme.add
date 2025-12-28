@@ -1,1 +1,59 @@
+                                                                     Queens Problem Using Genetic Algorithm      
 
+
+📌 Project Overview
+
+This project implements a Genetic Algorithm (GA) to solve the classic 8-Queens problem, where the objective is to place eight queens on a chessboard such that no two queens attack each other. The solution is obtained by evolving a population of candidate solutions using genetic operators.
+
+🧠 Problem Description
+
+The 8-Queens problem is a well-known combinatorial optimization problem. Each queen must be placed in a unique row and column, and no two queens can share the same diagonal. Traditional brute-force approaches are inefficient, making evolutionary algorithms a suitable alternative.
+
+⚙️ Methodology
+
+The Genetic Algorithm works by:
+
+-Generating a random initial population
+
+-Evaluating fitness based on non-attacking queen pairs
+
+-Selecting parents using tournament selection
+
+-Producing offspring using crossover
+
+-Introducing variation through mutation
+
+Preserving elite solutions for faster convergence
+
+🧪 Algorithm Parameters
+
+-Board Size (N): 8
+
+-Population Size: 100
+
+-Mutation Rate: 0.1
+
+-Maximum Generations: 1000
+
+-Selection Method: Tournament Selection
+
+-Crossover Type: Order-based crossover
+
+-Elitism: Top 10 individuals preserved
+
+▶️ How to Run the Code
+
+-Ensure Python is installed on your system.
+
+-Copy the code into a .py file (e.g., eight_queens_ga.py).
+
+-Run the file using: python eight_queens_ga.py
+
+-The solution and generation number will be displayed in the console.
+✅ Output
+
+The program outputs a valid arrangement of queens represented as a list, where the index indicates the column and the value indicates the row of a queen. It also displays the generation number in which the solution was found.
+
+📊 Conclusion
+
+The experiment confirms that Genetic Algorithms are effective for solving constraint-based optimization problems like the 8-Queens problem. By combining selection, crossover, mutation, and elitism, the algorithm converges efficiently toward an optimal solution.
